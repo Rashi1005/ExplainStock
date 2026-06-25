@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ExplainStock — Seller Reports</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 900px;
+                margin: 40px auto; padding: 20px; background: #f5f5f5; }
+        .report-card { background: white; border-radius: 8px;
+                        padding: 24px; margin-bottom: 24px;
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .product-header { display: flex; justify-content: space-between;
+                           align-items: center; margin-bottom: 16px; }
+        .product-id { font-size: 20px; font-weight: bold; color: #1565C0; }
+        .reorder-badge { background: #1B5E20; color: white;
+                          padding: 8px 16px; border-radius: 20px;
+                          font-size: 18px; font-weight: bold; }
+        .meta { color: #666; font-size: 13px; margin-bottom: 16px; }
+        .snap-badge { background: #E3F2FD; color: #1565C0;
+                       padding: 3px 10px; border-radius: 12px;
+                       font-size: 12px; margin-left: 8px; }
+        .report-text { line-height: 1.8; color: #333; white-space: pre-wrap; }
+        .section-title { font-weight: bold; color: #1565C0;
+                          margin-top: 12px; margin-bottom: 4px; }
+        h1 { color: #1565C0; border-bottom: 3px solid #1565C0;
+              padding-bottom: 12px; }
+        .footer { text-align: center; color: #999; margin-top: 40px;
+                   font-size: 12px; }
+    </style>
+</head>
+<body>
+    <h1>&#127978; ExplainStock — Inventory Decision Reports</h1>
+    <p style="color:#666">Store: CA_1 | Generated: 2026-06-21 22:59 |
+       Powered by XGBoost + SHAP + LLM Narratives</p>
+    
+    <div class="report-card">
+        <div class="product-header">
+            <div>
+                <div class="product-id">FOODS_1_072 </div>
+                <div class="meta">
+                    Store: CA_1 &nbsp;|&nbsp;
+                    Date: 2016-04-24 &nbsp;|&nbsp;
+                    Price: $5.28 &nbsp;|&nbsp;
+                    7-day avg: 0.0 units/day
+                </div>
+            </div>
+            <div class="reorder-badge">
+                Reorder: 1 units
+            </div>
+        </div>
+        <div class="report-text">Summary
+Our system recommends reordering 1 unit of product FOODS_1_072 for your store in CA_1. This is because the product has had low sales recently, with an average of 0 units sold per day over the last 7 and 28 days.
+
+Why This Recommendation
+The main reason for this recommendation is the extremely low sales trend, which has been downward. The average daily sales over the last 7 days (0.5582) and 28 days (0.5023) are very low, indicating that the product is not selling well. Additionally, the system considered the fact that today is not a SNAP day, which typically increases demand for FOODS products by 25.5%. Since it's not a SNAP day, the system is being cautious with the reorder quantity.
+
+What Could Change It
+If the demand trend were to increase by 50%, the system would recommend a much higher reorder quantity. On the other hand, if the demand trend were to decrease by 40%, the system would recommend a lower reorder quantity. The system is also not sensitive to price changes, as a 20% price increase or decrease would not change the recommendation.
+
+Your Action Items
+1. Monitor sales closely: Keep a close eye on sales of product FOODS_1_072, as the system is recommending a very low reorder quantity due to low sales.
+2. Consider promotions: Think about running promotions or discounts to try to increase sales of this product, especially since the system is not sensitive to price changes.
+3. Review inventory levels: Make sure you have enough storage space for the reordered unit, and consider clearing out any excess inventory of this product to make room for faster-selling items.</div>
+    </div>
+    
+    <div class="report-card">
+        <div class="product-header">
+            <div>
+                <div class="product-id">FOODS_3_296 </div>
+                <div class="meta">
+                    Store: CA_1 &nbsp;|&nbsp;
+                    Date: 2016-04-24 &nbsp;|&nbsp;
+                    Price: $2.0 &nbsp;|&nbsp;
+                    7-day avg: 0.14 units/day
+                </div>
+            </div>
+            <div class="reorder-badge">
+                Reorder: 1 units
+            </div>
+        </div>
+        <div class="report-text">Summary
+The system recommends reordering 1 unit of product FOODS_3_296 at store CA_1 on April 24, 2016. This decision is based on a 7-day average sales trend of 0.14 units per day and a 28-day average sales trend of 0.32 units per day, which is currently moving downward.
+
+Why This Recommendation
+The system made this recommendation because the recent sales trend has been low, with an average of 0.14 units sold per day over the last 7 days. The top factors influencing this decision are the 7-day and 28-day average sales, which have been decreasing. The system also considered that it's not a SNAP day, which typically increases demand by 25.5%.
+
+What Could Change It
+If the demand trend were to increase by 50%, the system would recommend a higher reorder quantity. On the other hand, if the demand trend were to decrease by 40%, the system would recommend a lower reorder quantity. Additionally, if the price were to decrease by 20%, the system would expect a slight increase in demand.
+
+Your Action Items
+1. Monitor sales trends: Keep a close eye on sales over the next week to see if the downward trend continues. If it does, consider reducing your reorder quantity.
+2. Consider price adjustments: If you're looking to increase demand, consider reducing your price by 20%. However, be aware that this may affect your profit margins.
+3. Prepare for SNAP days: Since SNAP days can increase demand by 25.5%, make sure to stock up accordingly to meet the increased demand on these days.</div>
+    </div>
+    
+    <div class="report-card">
+        <div class="product-header">
+            <div>
+                <div class="product-id">FOODS_3_567 </div>
+                <div class="meta">
+                    Store: CA_1 &nbsp;|&nbsp;
+                    Date: 2016-04-24 &nbsp;|&nbsp;
+                    Price: $1.74 &nbsp;|&nbsp;
+                    7-day avg: 0.43 units/day
+                </div>
+            </div>
+            <div class="reorder-badge">
+                Reorder: 2 units
+            </div>
+        </div>
+        <div class="report-text">Summary
+We recommend reordering 2 units of product FOODS_3_567 for your CA_1 store. This decision is based on the product's recent sales trend and other factors that affect demand.
+
+Why This Recommendation
+The average daily sales over the last 7 days (0.44 units) and last 28 days (0.68 units) are relatively low, and the trend is downward. However, the product has sold 3 units recently, which is higher than the average. The recommendation takes into account the current sales pace and the fact that it's not a SNAP day, which typically increases demand by 25.5%. The top factors influencing this decision are the 7-day and 28-day average sales, which indicate a slow sales period.
+
+What Could Change It
+If the demand trend were to increase by 50%, we would recommend a much higher reorder quantity. On the other hand, if the demand trend were to decrease by 40%, we would recommend a lower reorder quantity. Additionally, if the price were to decrease by 20%, the demand might increase, but the current price elasticity (-0.445) suggests that price changes may not have a significant impact on sales.
+
+Your Action Items
+1. Reorder 2 units of product FOODS_3_567 to maintain a safe stock level.
+2. Monitor sales closely, especially on SNAP days, when demand is expected to be 25.5% higher.
+3. Consider running a promotion or discount on non-SNAP days to boost sales during slower periods, but be cautious of the potential impact on profit margins due to the price elasticity of -0.445.</div>
+    </div>
+    
+    <div class="report-card">
+        <div class="product-header">
+            <div>
+                <div class="product-id">FOODS_3_211 </div>
+                <div class="meta">
+                    Store: CA_1 &nbsp;|&nbsp;
+                    Date: 2016-04-24 &nbsp;|&nbsp;
+                    Price: $4.58 &nbsp;|&nbsp;
+                    7-day avg: 2.29 units/day
+                </div>
+            </div>
+            <div class="reorder-badge">
+                Reorder: 4 units
+            </div>
+        </div>
+        <div class="report-text">Summary
+We recommend reordering 4 units of product FOODS_3_211 for your CA_1 store. This is based on a forecast of demand, considering factors like daily sales trends and prices.
+
+Why This Recommendation
+The model predicts that demand for this product is trending downward, with an average daily sale of 2.29 units over the last 7 days and 2.5 units over the last 28 days. The day of the week and recent sales volatility are the most important factors driving this forecast, with SHAP values of 0.2346 and 0.2213, respectively. Since today is not a SNAP day, we don't expect a significant boost in demand.
+
+What Could Change It
+If demand were to increase by 50%, our forecast would jump to 11.03 units, and we would recommend reordering more stock. On the other hand, if demand were to decrease by 40%, our forecast would drop to 6.10 units, and we would recommend reordering less. A 20% price decrease could also lead to a 2.57% increase in demand.
+
+Your Action Items
+1. Reorder 4 units of FOODS_3_211 to meet the forecasted demand.
+2. Monitor sales trends and adjust your pricing strategy, considering that a 20% price decrease could lead to a small increase in demand.
+3. Prepare for potential demand increases on SNAP days, when demand is expected to be 25.5% higher than usual.</div>
+    </div>
+    
+    <div class="report-card">
+        <div class="product-header">
+            <div>
+                <div class="product-id">FOODS_3_288 </div>
+                <div class="meta">
+                    Store: CA_1 &nbsp;|&nbsp;
+                    Date: 2016-04-24 &nbsp;|&nbsp;
+                    Price: $1.5 &nbsp;|&nbsp;
+                    7-day avg: 14.29 units/day
+                </div>
+            </div>
+            <div class="reorder-badge">
+                Reorder: 25 units
+            </div>
+        </div>
+        <div class="report-text">Summary
+We recommend reordering 25 units of product FOODS_3_288 for your CA_1 store. This is based on a predicted demand of 24 units, with an average daily sales trend of 14.29 units over the last 7 days.
+
+Why This Recommendation
+The model suggests that the current downward trend in sales, with an average of 16.79 units sold over the last 28 days, is a key factor in this recommendation. The top features influencing this forecast are the 7-day and 28-day average sales, which have SHAP values of 4.576 and 3.0162, respectively. This indicates that recent sales history is a strong indicator of future demand.
+
+What Could Change It
+If the demand trend were to increase by 50%, our forecast would increase to 11.03 units, and we would recommend reordering more stock. On the other hand, if the demand trend were to decrease by 40%, our forecast would decrease to 6.10 units, and we would recommend reordering less stock.
+
+Your Action Items
+1. Reorder 25 units of product FOODS_3_288 to meet the predicted demand.
+2. Monitor sales trends and adjust your inventory accordingly, as the model suggests that recent sales history is a strong indicator of future demand.
+3. Consider the impact of external factors, such as SNAP days, which can increase demand by 25.5%, and adjust your inventory accordingly to avoid stockouts or overstocking.</div>
+    </div>
+    
+    <div class="footer">
+        ExplainStock — Explainable Inventory Decisions for Amazon Sellers<br>
+        Built with XGBoost &middot; SHAP &middot; DiCE Counterfactuals &middot; LLaMA 3.3
+    </div>
+</body>
+</html>

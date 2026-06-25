@@ -1,0 +1,347 @@
+{
+  "FOODS_1_072": {
+    "data": {
+      "product_id": "FOODS_1_072",
+      "store": "CA_1",
+      "date": "2016-04-24",
+      "reorder_qty": 1,
+      "actual_sold": 0.0,
+      "sell_price": 5.28,
+      "is_snap_day": false,
+      "is_event_day": false,
+      "trend_7day_avg": 0.0,
+      "trend_28day_avg": 0.0,
+      "trend_direction": "downward",
+      "top_features": {
+        "roll_mean_7": 0.5582,
+        "roll_mean_28": 0.5023,
+        "roll_mean_14": 0.4363,
+        "lag_7": 0.3308,
+        "roll_std_28": 0.1856
+      },
+      "counterfactuals": [
+        {
+          "scenario": "Remove SNAP day",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.349318981170654,
+          "delta": -0.09183454513549805,
+          "delta_pct": -1.2341439359828805
+        },
+        {
+          "scenario": "Price +20%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.441153526306152,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        {
+          "scenario": "Price -20%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.632298946380615,
+          "delta": 0.1911454200744629,
+          "delta_pct": 2.568760597961657
+        },
+        {
+          "scenario": "Demand trend -40%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 6.095663547515869,
+          "delta": -1.3454899787902832,
+          "delta_pct": -18.081739238755112
+        },
+        {
+          "scenario": "Demand trend +50%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 11.029611587524414,
+          "delta": 3.5884580612182617,
+          "delta_pct": 48.22448621319001
+        },
+        {
+          "scenario": "Weekday instead",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 6.774101734161377,
+          "delta": -0.6670517921447754,
+          "delta_pct": -8.964360013406
+        }
+      ],
+      "snap_demand_lift_pct": 25.5,
+      "price_elasticity": -0.445
+    },
+    "report": "## Summary\nOur system recommends reordering 1 unit of product FOODS_1_072 for your store in CA_1. This is because the product has had low sales recently, with an average of 0 units sold per day over the last 7 and 28 days.\n\n## Why This Recommendation\nThe main reason for this recommendation is the extremely low sales trend, which has been downward. The average daily sales over the last 7 days (0.5582) and 28 days (0.5023) are very low, indicating that the product is not selling well. Additionally, the system considered the fact that today is not a SNAP day, which typically increases demand for FOODS products by 25.5%. Since it's not a SNAP day, the system is being cautious with the reorder quantity.\n\n## What Could Change It\nIf the demand trend were to increase by 50%, the system would recommend a much higher reorder quantity. On the other hand, if the demand trend were to decrease by 40%, the system would recommend a lower reorder quantity. The system is also not sensitive to price changes, as a 20% price increase or decrease would not change the recommendation.\n\n## Your Action Items\n1. **Monitor sales closely**: Keep a close eye on sales of product FOODS_1_072, as the system is recommending a very low reorder quantity due to low sales.\n2. **Consider promotions**: Think about running promotions or discounts to try to increase sales of this product, especially since the system is not sensitive to price changes.\n3. **Review inventory levels**: Make sure you have enough storage space for the reordered unit, and consider clearing out any excess inventory of this product to make room for faster-selling items."
+  },
+  "FOODS_3_296": {
+    "data": {
+      "product_id": "FOODS_3_296",
+      "store": "CA_1",
+      "date": "2016-04-24",
+      "reorder_qty": 1,
+      "actual_sold": 0.0,
+      "sell_price": 2.0,
+      "is_snap_day": false,
+      "is_event_day": false,
+      "trend_7day_avg": 0.14,
+      "trend_28day_avg": 0.32,
+      "trend_direction": "downward",
+      "top_features": {
+        "roll_mean_7": 0.4975,
+        "roll_mean_28": 0.4319,
+        "roll_mean_14": 0.3575,
+        "roll_std_28": 0.2789,
+        "lag_7": 0.2683
+      },
+      "counterfactuals": [
+        {
+          "scenario": "Remove SNAP day",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.349318981170654,
+          "delta": -0.09183454513549805,
+          "delta_pct": -1.2341439359828805
+        },
+        {
+          "scenario": "Price +20%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.441153526306152,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        {
+          "scenario": "Price -20%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.632298946380615,
+          "delta": 0.1911454200744629,
+          "delta_pct": 2.568760597961657
+        },
+        {
+          "scenario": "Demand trend -40%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 6.095663547515869,
+          "delta": -1.3454899787902832,
+          "delta_pct": -18.081739238755112
+        },
+        {
+          "scenario": "Demand trend +50%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 11.029611587524414,
+          "delta": 3.5884580612182617,
+          "delta_pct": 48.22448621319001
+        },
+        {
+          "scenario": "Weekday instead",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 6.774101734161377,
+          "delta": -0.6670517921447754,
+          "delta_pct": -8.964360013406
+        }
+      ],
+      "snap_demand_lift_pct": 25.5,
+      "price_elasticity": -0.445
+    },
+    "report": "## Summary\nThe system recommends reordering 1 unit of product FOODS_3_296 at store CA_1 on April 24, 2016. This decision is based on a 7-day average sales trend of 0.14 units per day and a 28-day average sales trend of 0.32 units per day, which is currently moving downward.\n\n## Why This Recommendation\nThe system made this recommendation because the recent sales trend has been low, with an average of 0.14 units sold per day over the last 7 days. The top factors influencing this decision are the 7-day and 28-day average sales, which have been decreasing. The system also considered that it's not a SNAP day, which typically increases demand by 25.5%.\n\n## What Could Change It\nIf the demand trend were to increase by 50%, the system would recommend a higher reorder quantity. On the other hand, if the demand trend were to decrease by 40%, the system would recommend a lower reorder quantity. Additionally, if the price were to decrease by 20%, the system would expect a slight increase in demand.\n\n## Your Action Items\n1. **Monitor sales trends**: Keep a close eye on sales over the next week to see if the downward trend continues. If it does, consider reducing your reorder quantity.\n2. **Consider price adjustments**: If you're looking to increase demand, consider reducing your price by 20%. However, be aware that this may affect your profit margins.\n3. **Prepare for SNAP days**: Since SNAP days can increase demand by 25.5%, make sure to stock up accordingly to meet the increased demand on these days."
+  },
+  "FOODS_3_567": {
+    "data": {
+      "product_id": "FOODS_3_567",
+      "store": "CA_1",
+      "date": "2016-04-24",
+      "reorder_qty": 2,
+      "actual_sold": 3.0,
+      "sell_price": 1.74,
+      "is_snap_day": false,
+      "is_event_day": false,
+      "trend_7day_avg": 0.43,
+      "trend_28day_avg": 0.68,
+      "trend_direction": "downward",
+      "top_features": {
+        "roll_mean_7": 0.4388,
+        "roll_mean_28": 0.3544,
+        "roll_mean_14": 0.3123,
+        "roll_std_7": 0.2247,
+        "lag_7": 0.2237
+      },
+      "counterfactuals": [
+        {
+          "scenario": "Remove SNAP day",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.349318981170654,
+          "delta": -0.09183454513549805,
+          "delta_pct": -1.2341439359828805
+        },
+        {
+          "scenario": "Price +20%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.441153526306152,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        {
+          "scenario": "Price -20%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.632298946380615,
+          "delta": 0.1911454200744629,
+          "delta_pct": 2.568760597961657
+        },
+        {
+          "scenario": "Demand trend -40%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 6.095663547515869,
+          "delta": -1.3454899787902832,
+          "delta_pct": -18.081739238755112
+        },
+        {
+          "scenario": "Demand trend +50%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 11.029611587524414,
+          "delta": 3.5884580612182617,
+          "delta_pct": 48.22448621319001
+        },
+        {
+          "scenario": "Weekday instead",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 6.774101734161377,
+          "delta": -0.6670517921447754,
+          "delta_pct": -8.964360013406
+        }
+      ],
+      "snap_demand_lift_pct": 25.5,
+      "price_elasticity": -0.445
+    },
+    "report": "## Summary\nWe recommend reordering 2 units of product FOODS_3_567 for your CA_1 store. This decision is based on the product's recent sales trend and other factors that affect demand.\n\n## Why This Recommendation\nThe average daily sales over the last 7 days (0.44 units) and last 28 days (0.68 units) are relatively low, and the trend is downward. However, the product has sold 3 units recently, which is higher than the average. The recommendation takes into account the current sales pace and the fact that it's not a SNAP day, which typically increases demand by 25.5%. The top factors influencing this decision are the 7-day and 28-day average sales, which indicate a slow sales period.\n\n## What Could Change It\nIf the demand trend were to increase by 50%, we would recommend a much higher reorder quantity. On the other hand, if the demand trend were to decrease by 40%, we would recommend a lower reorder quantity. Additionally, if the price were to decrease by 20%, the demand might increase, but the current price elasticity (-0.445) suggests that price changes may not have a significant impact on sales.\n\n## Your Action Items\n1. Reorder 2 units of product FOODS_3_567 to maintain a safe stock level.\n2. Monitor sales closely, especially on SNAP days, when demand is expected to be 25.5% higher.\n3. Consider running a promotion or discount on non-SNAP days to boost sales during slower periods, but be cautious of the potential impact on profit margins due to the price elasticity of -0.445."
+  },
+  "FOODS_3_211": {
+    "data": {
+      "product_id": "FOODS_3_211",
+      "store": "CA_1",
+      "date": "2016-04-24",
+      "reorder_qty": 4,
+      "actual_sold": 1.0,
+      "sell_price": 4.58,
+      "is_snap_day": false,
+      "is_event_day": false,
+      "trend_7day_avg": 2.29,
+      "trend_28day_avg": 2.5,
+      "trend_direction": "downward",
+      "top_features": {
+        "day_of_week": 0.2346,
+        "roll_std_7": 0.2213,
+        "roll_mean_7": 0.2195,
+        "roll_std_28": 0.166,
+        "roll_mean_28": 0.1582
+      },
+      "counterfactuals": [
+        {
+          "scenario": "Remove SNAP day",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.349318981170654,
+          "delta": -0.09183454513549805,
+          "delta_pct": -1.2341439359828805
+        },
+        {
+          "scenario": "Price +20%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.441153526306152,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        {
+          "scenario": "Price -20%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.632298946380615,
+          "delta": 0.1911454200744629,
+          "delta_pct": 2.568760597961657
+        },
+        {
+          "scenario": "Demand trend -40%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 6.095663547515869,
+          "delta": -1.3454899787902832,
+          "delta_pct": -18.081739238755112
+        },
+        {
+          "scenario": "Demand trend +50%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 11.029611587524414,
+          "delta": 3.5884580612182617,
+          "delta_pct": 48.22448621319001
+        },
+        {
+          "scenario": "Weekday instead",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 6.774101734161377,
+          "delta": -0.6670517921447754,
+          "delta_pct": -8.964360013406
+        }
+      ],
+      "snap_demand_lift_pct": 25.5,
+      "price_elasticity": -0.445
+    },
+    "report": "## Summary\nWe recommend reordering 4 units of product FOODS_3_211 for your CA_1 store. This is based on a forecast of demand, considering factors like daily sales trends and prices.\n\n## Why This Recommendation\nThe model predicts that demand for this product is trending downward, with an average daily sale of 2.29 units over the last 7 days and 2.5 units over the last 28 days. The day of the week and recent sales volatility are the most important factors driving this forecast, with SHAP values of 0.2346 and 0.2213, respectively. Since today is not a SNAP day, we don't expect a significant boost in demand.\n\n## What Could Change It\nIf demand were to increase by 50%, our forecast would jump to 11.03 units, and we would recommend reordering more stock. On the other hand, if demand were to decrease by 40%, our forecast would drop to 6.10 units, and we would recommend reordering less. A 20% price decrease could also lead to a 2.57% increase in demand.\n\n## Your Action Items\n1. Reorder 4 units of FOODS_3_211 to meet the forecasted demand.\n2. Monitor sales trends and adjust your pricing strategy, considering that a 20% price decrease could lead to a small increase in demand.\n3. Prepare for potential demand increases on SNAP days, when demand is expected to be 25.5% higher than usual."
+  },
+  "FOODS_3_288": {
+    "data": {
+      "product_id": "FOODS_3_288",
+      "store": "CA_1",
+      "date": "2016-04-24",
+      "reorder_qty": 25,
+      "actual_sold": 24.0,
+      "sell_price": 1.5,
+      "is_snap_day": false,
+      "is_event_day": false,
+      "trend_7day_avg": 14.29,
+      "trend_28day_avg": 16.79,
+      "trend_direction": "downward",
+      "top_features": {
+        "roll_mean_7": 4.576,
+        "roll_mean_28": 3.0162,
+        "lag_7": 2.4946,
+        "roll_mean_14": 1.6788,
+        "day_of_week": 0.8357
+      },
+      "counterfactuals": [
+        {
+          "scenario": "Remove SNAP day",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.349318981170654,
+          "delta": -0.09183454513549805,
+          "delta_pct": -1.2341439359828805
+        },
+        {
+          "scenario": "Price +20%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.441153526306152,
+          "delta": 0.0,
+          "delta_pct": 0.0
+        },
+        {
+          "scenario": "Price -20%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 7.632298946380615,
+          "delta": 0.1911454200744629,
+          "delta_pct": 2.568760597961657
+        },
+        {
+          "scenario": "Demand trend -40%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 6.095663547515869,
+          "delta": -1.3454899787902832,
+          "delta_pct": -18.081739238755112
+        },
+        {
+          "scenario": "Demand trend +50%",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 11.029611587524414,
+          "delta": 3.5884580612182617,
+          "delta_pct": 48.22448621319001
+        },
+        {
+          "scenario": "Weekday instead",
+          "base_pred": 7.441153526306152,
+          "cf_pred": 6.774101734161377,
+          "delta": -0.6670517921447754,
+          "delta_pct": -8.964360013406
+        }
+      ],
+      "snap_demand_lift_pct": 25.5,
+      "price_elasticity": -0.445
+    },
+    "report": "## Summary\nWe recommend reordering 25 units of product FOODS_3_288 for your CA_1 store. This is based on a predicted demand of 24 units, with an average daily sales trend of 14.29 units over the last 7 days.\n\n## Why This Recommendation\nThe model suggests that the current downward trend in sales, with an average of 16.79 units sold over the last 28 days, is a key factor in this recommendation. The top features influencing this forecast are the 7-day and 28-day average sales, which have SHAP values of 4.576 and 3.0162, respectively. This indicates that recent sales history is a strong indicator of future demand.\n\n## What Could Change It\nIf the demand trend were to increase by 50%, our forecast would increase to 11.03 units, and we would recommend reordering more stock. On the other hand, if the demand trend were to decrease by 40%, our forecast would decrease to 6.10 units, and we would recommend reordering less stock.\n\n## Your Action Items\n1. Reorder 25 units of product FOODS_3_288 to meet the predicted demand.\n2. Monitor sales trends and adjust your inventory accordingly, as the model suggests that recent sales history is a strong indicator of future demand.\n3. Consider the impact of external factors, such as SNAP days, which can increase demand by 25.5%, and adjust your inventory accordingly to avoid stockouts or overstocking."
+  }
+}

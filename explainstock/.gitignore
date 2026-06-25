@@ -1,0 +1,22 @@
+# Data — too large for GitHub
+data/raw/
+data/features/
+
+# API keys — never push these
+kaggle.json
+**/.env
+**/config.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+explainstock_env/
+
+# Large model artifacts
+*.bin
+
+# OS
+.DS_Store
+Thumbs.db
