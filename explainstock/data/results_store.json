@@ -1,0 +1,62 @@
+{
+  "model_training": {
+    "xgb_rmse": 2.4935375610729116,
+    "xgb_mae": 1.3549962043762207,
+    "xgb_mape": 53.42905951459399,
+    "lgb_rmse": 2.4491141617240855,
+    "lgb_mae": 1.3520033175971842,
+    "lgb_mape": 52.92247518718275,
+    "naive_rmse": 3.2753708917581226,
+    "naive_mae": 1.6745203300526892,
+    "naive_mape": 82.69245755393692,
+    "xgb_improvement_pct": 23.87007018510645,
+    "lgb_improvement_pct": 25.226356261306538,
+    "wilcoxon_xgb_vs_lgb_p": 0.6911352820936807,
+    "wilcoxon_naive_vs_xgb_p": 0.0,
+    "xgb_faith_global": 0.5972649572649572,
+    "xgb_faith_pval": 0.0012750908016827176,
+    "lgb_faith_global": 0.7449572649572649,
+    "lgb_faith_pval": 1.2688144528397225e-05,
+    "overlap_xgb": 8,
+    "overlap_lgb": 8,
+    "feature_selection_rmse_full": 2.4935,
+    "feature_selection_rmse_top10": 2.5421,
+    "feature_selection_pct_retained": 98.1,
+    "backtest_rmse_range": [
+      2.4485,
+      2.5582
+    ],
+    "backtest_rmse_mean": 2.4982,
+    "backtest_rmse_std": 0.045
+  },
+  "shap_explainability": {
+    "ci_low_overlap": 8.0,
+    "ci_high_overlap": 10.0,
+    "snap_lift_full_pct": 18.752082802422905,
+    "snap_lift_ci": [
+      13.83292645208135,
+      23.82823038086984
+    ],
+    "snap_mwu_p_full": 1.0815283907754523e-20,
+    "price_elasticity_shap_corr": -0.3764207150195872,
+    "price_elasticity_shap_p": 0.0,
+    "price_elasticity_raw_corr": -0.13409826438285502,
+    "price_elasticity_raw_p": 8.619988769550913e-161,
+    "all_mismatches_count": 12,
+    "all_mismatches_list": [
+      "roll_mean_14",
+      "roll_mean_28",
+      "day_of_month",
+      "week_of_year",
+      "quarter",
+      "is_month_start",
+      "is_snap",
+      "is_event",
+      "is_cultural_event",
+      "is_religious_event",
+      "price_change_pct",
+      "is_price_drop"
+    ],
+    "max_collinearity_corr": 0.9799220463770885
+  }
+}
